@@ -70,7 +70,7 @@ const Header = ({ links }: HeaderProps) => {
 									</Link>
 								) : (
 									<span className="flex cursor-pointer items-center">
-										{link.label}{" "}
+										{link.label}
 										<ChevronDown
 											className={`ml-1 h-4 w-4 transition duration-200 ${
 												openIndex === index
@@ -81,12 +81,12 @@ const Header = ({ links }: HeaderProps) => {
 									</span>
 								)}
 								{link.content && openIndex === index && (
-									<div className="absolute left-0 top-full rounded-md bg-white border border-gray-200 shadow-lg text-primary/60 hover:text-primary">
-										<ul className="flex flex-col items-start">
+									<div className="absolute left-0 top-full rounded-md bg-white border border-gray-200 shadow-lg text-primary/60 hover:text-primary min-w-max ">
+										<ul>
 											{link.content.map((item, idx) => (
 												<li
 													key={idx}
-													className="p-2 w-full text-primary/70 hover:text-primary"
+													className="p-2 text-primary/70 hover:text-primary max-h-96"
 												>
 													<Link href={item.href}>
 														{item.name}

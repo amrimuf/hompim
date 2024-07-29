@@ -23,13 +23,15 @@ const Footer: React.FC = () => {
 					</p>
 				</div>
 				<div className="md:w-1/3">
-					<h3 className="font-bold text-lg mb-4">Quick Links</h3>
+					<h3 className="font-bold text-lg mb-4 text-secondary">
+						Quick Links
+					</h3>
 					<ul>
 						{quickLinks.map((link, index) => (
 							<li key={index} className="mb-2">
 								<Link
 									href={link.href}
-									className="hover:underline"
+									className="hover:underline underline-offset-2"
 								>
 									{link.label}
 								</Link>
@@ -38,7 +40,9 @@ const Footer: React.FC = () => {
 					</ul>
 				</div>
 				<div className="md:w-1/3">
-					<h3 className="font-bold text-lg mb-4">Follow Us</h3>
+					<h3 className="font-bold text-lg mb-4 text-secondary">
+						Follow Us
+					</h3>
 					<ul className="flex space-x-4">
 						{socialMediaLinks.map((link, index) => (
 							<li key={index}>
@@ -47,7 +51,7 @@ const Footer: React.FC = () => {
 									target="_blank"
 									rel="noopener noreferrer"
 								>
-									<link.Icon className="w-6 h-6 text-white hover:text-gray-400" />
+									<link.Icon className="w-6 h-6 text-white hover:text-gray-200" />
 								</Link>
 							</li>
 						))}

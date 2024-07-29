@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import BackToTopButton from "@/components/ui/back-to-top";
-import Footer from "@/components/ui/footer";
-import Header from "@/components/ui/header";
+import BackToTopButton from "@/components/back-to-top";
+import Footer from "@/components/footer";
+import Header from "@/components/header";
 import { headerLinks } from "@/lib/dummy-data";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -102,7 +102,7 @@ export default function RootLayout({
 			<meta name="theme-color" content="#ffffff" />
 			<body className={inter.className}>
 				<Header links={headerLinks}></Header>
-				{children}
+				<main className="pt-16">{children}</main>
 				<BackToTopButton />
 				<Footer />
 			</body>

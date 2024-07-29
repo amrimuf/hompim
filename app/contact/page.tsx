@@ -1,7 +1,7 @@
-export default function AboutUs() {
+export default function Contact() {
 	return (
 		<div className="container">
-			<p>about us</p>
+			<p>contact</p>
 		</div>
 	);
 }

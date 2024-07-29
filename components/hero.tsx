@@ -7,15 +7,17 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import "swiper/css/navigation";
 import Image from "next/image";
-import Link from "next/link";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { slides } from "@/lib/dummy-data";
 import ScrollDownAnimation from "./scroll-down";
 
 const Hero: React.FC = () => {
 	return (
-		<div className="relative h-screen flex flex-col items-center justify-center gap-4 top-10">
-			<div className="w-full max-w-7xl mx-auto p-4">
+		<div
+			className="relative flex flex-col items-center justify-around p-2"
+			style={{ height: "calc(100vh - 4rem)" }}
+		>
+			<div className="w-full max-w-7xl mx-auto">
 				<Swiper
 					onSwiper={(swiper) => console.log(swiper)}
 					spaceBetween={0}
