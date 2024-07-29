@@ -21,10 +21,10 @@ const FilterButtons: React.FC<FilterButtonsProps> = ({ currentFilter }) => {
 			{filters.map((filter) => (
 				<button
 					key={filter.slug}
-					className={`px-4 py-2 rounded ${
+					className={`px-4 py-2 rounded-md ${
 						currentFilter === filter.slug
 							? "bg-secondary"
-							: "bg-gray-200"
+							: "bg-primary/10 shadow-md"
 					}`}
 					onClick={() => handleFilterChange(filter.slug)}
 				>

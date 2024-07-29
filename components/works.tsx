@@ -50,10 +50,10 @@ const Works: React.FC = () => {
 				{filterOptions.map((option) => (
 					<button
 						key={option.value}
-						className={`px-4 py-2 rounded-md bg-white ${
+						className={`px-4 py-2 rounded-md bg-white   ${
 							filterType === option.value
-								? " border border-primary border-2"
-								: "shadow"
+								? " outline outline-primary "
+								: "shadow-md "
 						}`}
 						onClick={() => setFilterType(option.value)}
 					>
@@ -78,7 +78,7 @@ const Works: React.FC = () => {
 				<div className="flex justify-center mt-8">
 					<a
 						href={`/${filterType}s`}
-						className="bg-primary text-white px-6 py-3 rounded text-center"
+						className="bg-primary text-white px-6 py-3 rounded-md shadow-md text-center"
 					>
 						See More
 					</a>

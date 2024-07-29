@@ -84,14 +84,14 @@ const Header = ({ links }: HeaderProps) => {
 									<div className="absolute left-0 top-full rounded-md bg-white border border-gray-200 shadow-lg text-primary/60 hover:text-primary min-w-max ">
 										<ul>
 											{link.content.map((item, idx) => (
-												<li
+												<Link
+													href={item.href}
 													key={idx}
-													className="p-2 text-primary/70 hover:text-primary max-h-96"
 												>
-													<Link href={item.href}>
+													<li className="p-2 text-primary/70 hover:text-primary rounded-md hover:bg-gray-100 max-h-96 border-b-4 hover:border-b-2">
 														{item.name}
-													</Link>
-												</li>
+													</li>
+												</Link>
 											))}
 										</ul>
 									</div>
@@ -113,7 +113,7 @@ const Header = ({ links }: HeaderProps) => {
 
 			{/* MOBILE MENU */}
 			{isMobileMenuOpen && (
-				<div className="fixed inset-0 bg-primary z-50 flex flex-col items-center justify-center text-4xl font-bold">
+				<div className="fixed inset-0 bg-primary z-50 flex flex-col items-center justify-center text-xl font-bold">
 					<button
 						onClick={toggleMobileMenu}
 						className="absolute top-4 right-4"

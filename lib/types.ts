@@ -3,3 +3,9 @@ export interface LinkItem {
 	href?: string;
 	content?: { name: string; href: string }[];
 }
+
+export interface Article {
+	title: string;
+	description: string;
+	content: string;
+}
