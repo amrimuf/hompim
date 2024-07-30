@@ -1,6 +1,6 @@
 import { features } from "@/lib/dummy-data";
 import { useEffect, useState } from "react";
-import Section from "./section";
+import Section from "./section-layout";
 import Card from "./card";
 
 const Works: React.FC = () => {

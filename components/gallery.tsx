@@ -5,7 +5,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { testimonials } from "@/lib/dummy-data";
 import Marquee from "react-fast-marquee";
-import Section from "./section";
+import Section from "./section-layout";
 import ClientCard from "./client-card";
 
 const Gallery: React.FC = () => {
