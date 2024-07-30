@@ -10,12 +10,20 @@ interface Params {
 	case: string;
 }
 
+function getPostDetails(id: string) {
+	const postData =  getPostData(id);
+	if (!postData) {
+		notFound();
+	}
+	return postData;
+}
+
 export async function generateMetadata({
 	params,
 }: {
 	params: Params;
 }): Promise<Metadata> {
-	const postData = await fetchPostData(params.case);
+	const postData = await getPostDetails(params.case);
 	return {
 		title: generateTitle(postData.title),
 	};
@@ -27,17 +35,8 @@ export async function generateStaticParams() {
 	return paths.map(({ params }) => ({ id: params.id }));
 }
 
-// Fetch post data for a specific slug
-export async function fetchPostData(id: string) {
-	const postData = await getPostData(id);
-	if (!postData) {
-		notFound();
-	}
-	return postData;
-}
-
 export default async function Post({ params }: { params: Params }) {
-	const postData = await fetchPostData(params.case);
+	const postData = await getPostDetails(params.case);
 
 	const date = new Date(postData.date).toLocaleDateString();
 
