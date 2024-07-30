@@ -5,7 +5,7 @@ import FilterButtons from "./filter-buttons";
 interface FeatureSectionProps {
 	features: any[];
 	filterType: string | null;
-	subtypeSlug: string | null;
+	subtypeSlug: string | null ;
 }
 
 const ServiceSection: React.FC<FeatureSectionProps> = ({

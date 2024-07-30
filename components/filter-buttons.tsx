@@ -17,7 +17,7 @@ const FilterButtons: React.FC<FilterButtonsProps> = ({ currentFilter }) => {
 	};
 
 	return (
-		<div className="flex justify-center gap-4 mb-8">
+		<div className="flex justify-center gap-4 mb-8 flex-wrap">
 			{filters.map((filter) => (
 				<button
 					key={filter.slug}

@@ -20,8 +20,8 @@ export const headerLinks = [
 	{
 		label: "Products",
 		content: [
-			{ name: "HompimShop", href: "/cases/hompimshop" },
-			{ name: "HompimPay", href: "/cases/hompimpay" },
+			{ name: "HompimShop", href: "/hompimshop" },
+			{ name: "HompimPay", href: "/hompimpay" },
 		],
 	},
 	{

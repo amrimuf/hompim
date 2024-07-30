@@ -72,7 +72,7 @@ const Header = ({ links }: HeaderProps) => {
 									<span className="flex cursor-pointer items-center">
 										{link.label}
 										<ChevronDown
-											className={`ml-1 h-4 w-4 transition duration-200 ${
+											className={`ml-1 h-4 w-4 transition-transform duration-200 ${
 												openIndex === index
 													? "rotate-180"
 													: "rotate-0"
@@ -167,7 +167,7 @@ const Header = ({ links }: HeaderProps) => {
 									)}
 							</li>
 						))}
-						<Cta />
+						<Cta onClick={toggleMobileMenu} />
 					</ul>
 				</div>
 			)}

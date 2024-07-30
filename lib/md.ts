@@ -3,10 +3,10 @@ import path from "path";
 import matter from "gray-matter";
 
 // Define the type for the post metadata
-export interface PostMetadata {
+interface PostMetadata {
 	title: string;
+	author: string;
 	date: string;
-	// Add other metadata fields as needed
 }
 
 // Define the type for the post data

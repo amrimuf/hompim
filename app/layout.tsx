@@ -102,7 +102,7 @@ export default function RootLayout({
 			<meta name="theme-color" content="#ffffff" />
 			<body className={inter.className}>
 				<Header links={headerLinks}></Header>
-				<main className="pt-16">{children}</main>
+				<main className="pt-20">{children}</main>
 				<BackToTopButton />
 				<Footer />
 			</body>

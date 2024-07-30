@@ -34,7 +34,7 @@ const Card: React.FC<CardProps> = ({
 
 			{/* External Link Button */}
 			<Link
-				href={`/cases/${slug}`}
+				href={`/${slug}`}
 				target="_blank"
 				rel="noopener noreferrer"
 				className="absolute top-4 right-4 bg-white text-primary p-2 rounded-full shadow-lg flex items-center justify-center z-10 hover:scale-110 transition-all duration-500"
@@ -43,7 +43,7 @@ const Card: React.FC<CardProps> = ({
 			</Link>
 
 			{/* Title */}
-			<h3 className="absolute bottom-4 left-4 text-xl font-bold text-primary bg-white bg-opacity-80 p-2 rounded-lg shadow-md z-10">
+			<h3 className="absolute bottom-4 left-4 md:text-xl font-bold text-primary bg-white bg-opacity-80 p-2 mr-4 rounded-lg shadow-md z-10">
 				{title}
 			</h3>
 

@@ -41,11 +41,11 @@ const Hero: React.FC = () => {
 									layout="fill"
 									objectFit="cover"
 								/>
-								<div className="absolute inset-0 flex flex-col items-center justify-center p-6 bg-black bg-opacity-20 rounded-lg">
+								<div className="absolute inset-0 flex flex-col items-center justify-center p-6 bg-secondary/20 rounded-lg ">
 									<h2 className="text-4xl text-white font-bold mb-4 text-center md:text-5xl">
 										{slide.title}
 									</h2>
-									<p className="text-lg text-white text-center md:text-xl max-w-md">
+									<p className="text-lg text-white text-center md:text-xl max-w-lg">
 										{slide.description}
 									</p>
 								</div>
