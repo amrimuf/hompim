@@ -102,3 +102,15 @@ body,
 .swiper-pagination-bullet-active {
 	@apply !bg-secondary !opacity-100;
 }
+
+.prose {
+	@apply max-w-full;
+}
+
+.prose a {
+	@apply text-red-500;
+}
+
+.prose a:hover {
+	@apply text-blue-500;
+}

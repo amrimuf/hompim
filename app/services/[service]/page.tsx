@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
-import { usePathname } from "next/navigation";
+import React from "react";
+import { usePathname, useParams } from "next/navigation";
 import { features } from "@/lib/dummy-data";
 import ServiceSection from "@/components/service-section";
 

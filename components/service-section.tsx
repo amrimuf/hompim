@@ -5,7 +5,7 @@ import FilterButtons from "./filter-buttons";
 interface FeatureSectionProps {
 	features: any[];
 	filterType: string | null;
-	subtypeSlug: string | null ;
+	subtypeSlug: string | null;
 }
 
 const ServiceSection: React.FC<FeatureSectionProps> = ({
@@ -24,17 +24,23 @@ const ServiceSection: React.FC<FeatureSectionProps> = ({
 			<h2 className="text-3xl font-bold mb-6 text-center">Service</h2>
 			<FilterButtons currentFilter={subtypeSlug} />
 			<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-				{filteredFeatures.map((feature, index) => (
-					<Card
-						key={index}
-						imgSrc={feature.imageSrc}
-						imgAlt={feature.imageAlt}
-						title={feature.title}
-						description={feature.description}
-						type={feature.type}
-						slug={feature.slug}
-					/>
-				))}
+				{filteredFeatures.length > 0 ? (
+					filteredFeatures.map((feature, index) => (
+						<Card
+							key={index}
+							imgSrc={feature.imageSrc}
+							imgAlt={feature.imageAlt}
+							title={feature.title}
+							description={feature.description}
+							type={feature.type}
+							slug={feature.slug}
+						/>
+					))
+				) : (
+					<p className="text-center col-span-3">
+						No services match the selected category.
+					</p>
+				)}
 			</div>
 		</main>
 	);

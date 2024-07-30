@@ -5,11 +5,12 @@ import BackToTopButton from "@/components/back-to-top";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { headerLinks } from "@/lib/dummy-data";
+import { generateTitle } from "@/lib/metadata";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "Hompim",
+	title: generateTitle(),
 	description: "Glow your wow.",
 };
 
