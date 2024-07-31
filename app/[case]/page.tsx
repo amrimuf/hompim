@@ -11,7 +11,7 @@ interface Params {
 }
 
 function getPostDetails(id: string) {
-	const postData =  getPostData(id);
+	const postData = getPostData(id);
 	if (!postData) {
 		notFound();
 	}
@@ -73,7 +73,7 @@ export default async function Post({ params }: { params: Params }) {
 		<main className="container mx-auto px-4 py-6 md:px-6 md:py-8">
 			<article className="bg-white border-4 md:border-8 border-secondary border-dashed shadow-md rounded-xl p-6 md:p-8">
 				<header className="flex flex-col items-center mb-6">
-					<h1 className="text-4xl font-extrabold text-gray-900 mb-2 text-center">
+					<h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2 text-center">
 						{postData.title}
 					</h1>
 					<p className="text-sm text-gray-500 mb-2 text-center">
@@ -83,7 +83,7 @@ export default async function Post({ params }: { params: Params }) {
 						by {postData.author}
 					</p>
 				</header>
-				<section className="prose lg:prose-xl">
+				<section className="prose lg:prose-xl overflow-hidden break-words">
 					<MDXRemote
 						source={postData.content}
 						components={components}

@@ -80,7 +80,7 @@ body,
 
 .swiper-button-next,
 .swiper-button-prev {
-	@apply !text-white !mx-8 !absolute !top-1/2 !transform !-translate-y-1/2 !z-10 !rounded-3xl !hidden md:!flex !items-center !justify-center !cursor-pointer !bg-primary !transition-all !duration-300 !p-6;
+	@apply !text-white  !absolute !top-1/2 !transform !-translate-y-1/2 !z-10 !rounded-3xl !hidden md:!flex !items-center !justify-center !cursor-pointer !bg-primary !transition-all !duration-300 !p-6;
 }
 
 /* Ensures the icon size is correct */

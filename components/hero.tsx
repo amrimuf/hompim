@@ -13,10 +13,7 @@ import ScrollDownAnimation from "./scroll-down";
 
 const Hero: React.FC = () => {
 	return (
-		<div
-			className="relative flex flex-col items-center justify-around p-2"
-			style={{ height: "calc(100vh - 4rem)" }}
-		>
+		<div className="relative flex flex-col items-center justify-around gap-8 m-4 md:m-8">
 			<div className="w-full max-w-7xl mx-auto">
 				<Swiper
 					onSwiper={(swiper) => console.log(swiper)}

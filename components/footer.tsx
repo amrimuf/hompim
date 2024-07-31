@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
 	const currentYear = new Date().getFullYear();
 
 	return (
-		<footer className="bg-primary text-white py-8 rounded-xl m-8">
+		<footer className="bg-primary text-white py-8 rounded-xl m-4 md:m-8">
 			<div className="container mx-auto flex flex-col md:flex-row justify-between items-start space-y-8 md:space-y-0 gap-8">
 				<div className="md:w-1/3">
 					<Image
@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
 					<h3 className="font-bold text-lg mb-4 text-secondary">
 						Follow Us
 					</h3>
-					<ul className="flex space-x-4">
+					<ul className="flex space-x-4 flex-wrap">
 						{socialMediaLinks.map((link, index) => (
 							<li key={index}>
 								<Link
@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
 					</ul>
 				</div>
 			</div>
-			<div className="mt-8 border-t border-gray-700 pt-4 text-center">
+			<div className="mt-8 mx-4 border-t border-gray-700 pt-4 text-center">
 				&copy; {currentYear} Your Company. All rights reserved.
 			</div>
 		</footer>
