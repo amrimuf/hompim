@@ -4,9 +4,9 @@ date: 2024-07-30
 author: The Hompim Team
 ---
 
-![Alt text](/images/hompim-icon-neon.png)
+import CustomButton from "@/components/customButton";
 
-<button className="bg-red-500">Click Me</button>
+![Alt text](/images/hompim-icon-neon.png)
 
 Welcome to Hompim! We are passionate about creating innovative solutions that empower individuals and businesses alike. Our journey began with a simple idea: to make technology accessible and beneficial for everyone.
 
@@ -42,7 +42,13 @@ We are always looking for talented and passionate individuals to join our team. 
 
 ## Contact Us
 
-If you have any questions or would like to learn more about our products and services, feel free to reach out to us.
+If you have any questions or would like to learn more about our products and services, feel free to reach out to us:
+
+<a className="!text-white not-prose" href="/contact">
+	<button className="bg-primary rounded px-2 hover:bg-primary/90">
+		Contact Us
+	</button>
+</a>
 
 -   Email: contact@hompim.com
 -   Phone: (123) 456-7890

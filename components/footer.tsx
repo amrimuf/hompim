@@ -17,9 +17,9 @@ const Footer: React.FC = () => {
 						height={150}
 					/>
 					<p className="mt-4">
-						Welcome to our playful world of toys and joy. We bring
-						happiness to children with our high-quality and
-						affordable toys.
+						Our journey began with a simple idea:
+						to make technology accessible and beneficial for
+						everyone.
 					</p>
 				</div>
 				<div className="md:w-1/3">

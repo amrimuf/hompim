@@ -339,7 +339,7 @@ export const quickLinks = [
 		label: "Home",
 	},
 	{
-		href: "/about",
+		href: "/about-us",
 		label: "About Us",
 	},
 	{
