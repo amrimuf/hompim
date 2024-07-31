@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { quickLinks, socialMediaLinks } from "@/lib/dummy-data";
+import { APP_NAME } from "@/lib/metadata";
 
 const Footer: React.FC = () => {
 	const currentYear = new Date().getFullYear();
@@ -17,9 +18,8 @@ const Footer: React.FC = () => {
 						height={150}
 					/>
 					<p className="mt-4">
-						Our journey began with a simple idea:
-						to make technology accessible and beneficial for
-						everyone.
+						Our journey began with a simple idea: to make technology
+						accessible and beneficial for everyone.
 					</p>
 				</div>
 				<div className="md:w-1/3">
@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
 				</div>
 			</div>
 			<div className="mt-8 mx-4 border-t border-gray-700 pt-4 text-center">
-				&copy; {currentYear} Your Company. All rights reserved.
+				&copy; {currentYear} {APP_NAME}. All rights reserved.
 			</div>
 		</footer>
 	);
