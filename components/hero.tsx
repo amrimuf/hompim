@@ -8,7 +8,7 @@ import "swiper/css/autoplay";
 import "swiper/css/navigation";
 import Image from "next/image";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import { slides } from "@/lib/dummy-data";
+import { heroSlides } from "@/lib/dummy-data";
 import ScrollDownAnimation from "./scroll-down";
 
 const Hero: React.FC = () => {
@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
 					modules={[Autoplay, Pagination, Navigation]}
 					className="rounded-xl overflow-hidden"
 				>
-					{slides.map((slide, index) => (
+					{heroSlides.map((slide, index) => (
 						<SwiperSlide key={index}>
 							<div className="relative w-full h-[70vh]">
 								<Image

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { features } from "@/lib/dummy-data";
+import React from "react";
+import { works } from "@/lib/dummy-data";
 import ServiceSection from "@/components/service-section";
 import type { Metadata } from "next";
 import { generateTitle } from "@/lib/metadata";
@@ -13,7 +13,7 @@ const ServicesPage: React.FC = () => {
 	return (
 		<div>
 			<ServiceSection
-				features={features}
+				services={works}
 				filterType="service"
 				subtypeSlug={null}
 			/>

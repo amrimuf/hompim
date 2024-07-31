@@ -2,7 +2,7 @@
 
 import React from "react";
 import { usePathname, useParams } from "next/navigation";
-import { features } from "@/lib/dummy-data";
+import { works } from "@/lib/dummy-data";
 import ServiceSection from "@/components/service-section";
 
 const ServiceSubtypePage: React.FC = () => {
@@ -12,7 +12,7 @@ const ServiceSubtypePage: React.FC = () => {
 	return (
 		<div>
 			<ServiceSection
-				features={features}
+				services={works}
 				filterType="service"
 				subtypeSlug={subTypeSlug}
 			/>

@@ -2,21 +2,21 @@ import React from "react";
 import Card from "./card";
 import FilterButtons from "./filter-buttons";
 
-interface FeatureSectionProps {
-	features: any[];
+interface servicesectionProps {
+	services: any[];
 	filterType: string | null;
 	subtypeSlug: string | null;
 }
 
-const ServiceSection: React.FC<FeatureSectionProps> = ({
-	features,
+const ServiceSection: React.FC<servicesectionProps> = ({
+	services,
 	filterType,
 	subtypeSlug,
 }) => {
-	const filteredFeatures = features.filter(
-		(feature) =>
-			(filterType ? feature.type === filterType : true) &&
-			(subtypeSlug ? feature.subTypeSlug === subtypeSlug : true)
+	const filteredservices = services.filter(
+		(service) =>
+			(filterType ? service.type === filterType : true) &&
+			(subtypeSlug ? service.subTypeSlug === subtypeSlug : true)
 	);
 
 	return (
@@ -24,16 +24,16 @@ const ServiceSection: React.FC<FeatureSectionProps> = ({
 			<h2 className="text-3xl font-bold mb-6 text-center">Service</h2>
 			<FilterButtons currentFilter={subtypeSlug} />
 			<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-				{filteredFeatures.length > 0 ? (
-					filteredFeatures.map((feature, index) => (
+				{filteredservices.length > 0 ? (
+					filteredservices.map((service, index) => (
 						<Card
 							key={index}
-							imgSrc={feature.imageSrc}
-							imgAlt={feature.imageAlt}
-							title={feature.title}
-							description={feature.description}
-							type={feature.type}
-							slug={feature.slug}
+							imgSrc={service.imageSrc}
+							imgAlt={service.imageAlt}
+							title={service.title}
+							description={service.description}
+							type={service.type}
+							slug={service.slug}
 						/>
 					))
 				) : (

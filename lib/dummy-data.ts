@@ -30,37 +30,56 @@ export const headerLinks = [
 	},
 ];
 
-export const filters = [
+export const serviceFilters = [
 	{ name: "All", slug: null },
-	{ name: "UI/UX Design", slug: "ui-ux-design" },
-	{ name: "Web Development", slug: "web-development" },
 	{ name: "Photography", slug: "photography" },
+	{ name: "Web Development", slug: "web-development" },
+	{ name: "UI/UX Design", slug: "ui-ux-design" },
+	{ name: "Graphic Design", slug: "graphic-design" },
+	{ name: "Content Creation", slug: "content-creation" },
+	{ name: "SEO Optimization", slug: "seo-optimization" },
+	{ name: "Digital Marketing", slug: "digital-marketing" },
+	{ name: "Brand Strategy", slug: "brand-strategy" },
+	{ name: "Video Production", slug: "video-production" },
+	{ name: "App Development", slug: "app-development" },
+	{ name: "IT Consulting", slug: "it-consulting" },
 ];
 
-export const slides = [
+export const heroSlides = [
 	{
-		src: "/images/hero1.jpeg",
+		src: "/images/hero1.jpg",
 		title: "Grow and Glow Your Brand's Wow",
 		description:
 			"Help every business reach its full digital potential by empowering the best young talent.",
 	},
 	{
-		src: "/images/hero2.jpeg",
+		src: "/images/hero2.jpg",
 		title: "Your Partner in Digital Transformation",
 		description:
 			"Transform your business with our comprehensive digital marketing and SaaS solutions tailored to your needs.",
 	},
 	{
-		src: "/images/hero3.jpeg",
+		src: "/images/hero3.jpg",
 		title: "Unleashing Creativity in the Digital Realm",
 		description:
 			"Empower your brand with creative solutions and strategic digital marketing that make a lasting impact.",
 	},
 ];
 
-export const features = [
+export const workFilters = [
 	{
-		imageSrc: "/images/case1.jpeg",
+		label: "Services",
+		slug: "service",
+	},
+	{
+		label: "Products",
+		slug: "product",
+	},
+];
+
+export const works = [
+	{
+		imageSrc: "/images/work1.jpeg",
 		imageAlt: "Rebranding Elevanto This Summer",
 		title: "Rebranding Elevanto This Summer",
 		type: "service",
@@ -68,113 +87,146 @@ export const features = [
 		subTypeName: "UI/UX Design",
 		subTypeSlug: "ui-ux-design",
 		description:
-			"Elevanto, a prominent digital marketing agency, underwent a rebranding to align with contemporary design trends. This transformation led to a notable boost in user engagement.",
+			"Elevanto, a prominent digital marketing agency, underwent a rebranding this summer to align with contemporary design trends. This transformation led to a notable boost in user engagement.",
 		slug: "rebranding-elevanto-this-summer",
 	},
 	{
-		imageSrc: "/images/case2.jpeg",
-		imageAlt: "Revamp of TechWave Solutions",
-		title: "Revamp of TechWave Solutions",
-		type: "service",
-		subtype: "web development",
-		subTypeName: "Web Development",
-		subTypeSlug: "web-development",
-		description:
-			"TechWave Solutions required a refreshed look to enhance their online presence. Our redesign significantly improved their website's usability and functionality, leading to increased customer satisfaction.",
-		slug: "revamp-of-techwave-solutions",
-	},
-	{
-		imageSrc: "/images/case3.jpeg",
-		imageAlt: "Creative Campaign for Bright Ideas",
-		title: "Creative Campaign for Bright Ideas",
-		type: "product",
-		description:
-			"Bright Ideas sought a creative marketing campaign to elevate their brand visibility. We designed a visually engaging strategy that greatly enhanced their lead generation and market presence.",
-		slug: "creative-campaign-for-bright-ideas",
-	},
-	{
-		imageSrc: "/images/case4.jpeg",
-		imageAlt: "Modernize the Site for GreenTech",
-		title: "Modernize the Site for GreenTech",
-		type: "product",
-		description:
-			"GreenTech needed a modernized website to better showcase their innovative products. Our design included a sleek interface and optimized site performance, resulting in higher user retention.",
-		slug: "modernize-the-site-for-greentech",
-	},
-	{
-		imageSrc: "/images/case5.jpeg",
-		imageAlt: "UX/UI Overhaul for ShopEase",
-		title: "UX/UI Overhaul for ShopEase",
-		type: "service",
-		subtype: "ui/ux design",
-		subTypeName: "UI/UX Design",
-		subTypeSlug: "ui-ux-design",
-		description:
-			"ShopEase required a thorough UX/UI overhaul. Our focus was on improving usability and visual appeal, which led to enhanced user engagement and increased conversion rates.",
-		slug: "ux-ui-overhaul-for-shopease",
-	},
-	{
-		imageSrc: "/images/case6.jpeg",
-		imageAlt: "Brand Identity Creation for Stellar",
-		title: "Brand Identity Creation for Stellar",
+		imageSrc: "/images/work2.jpeg",
+		imageAlt: "Photography for Nature Magazine",
+		title: "Photography for Nature Magazine",
 		type: "service",
 		subtype: "photography",
 		subTypeName: "Photography",
 		subTypeSlug: "photography",
 		description:
-			"Stellar sought a new brand identity to reflect their evolving growth. We developed a comprehensive brand design, including logo and marketing materials, which helped them stand out in a competitive market.",
-		slug: "brand-identity-creation-for-stellar",
+			"Captured stunning landscapes and wildlife for Nature Magazine, showcasing the beauty of the natural world and enhancing their editorial content.",
+		slug: "photography-for-nature-magazine",
 	},
 	{
-		imageSrc: "/images/case7.jpeg",
-		imageAlt: "Digital Transformation for Urbanity",
-		title: "Digital Transformation for Urbanity",
+		imageSrc: "/images/work3.jpeg",
+		imageAlt: "Developing E-commerce Platform for TechMart",
+		title: "Developing E-commerce Platform for TechMart",
 		type: "service",
 		subtype: "web development",
 		subTypeName: "Web Development",
 		subTypeSlug: "web-development",
 		description:
-			"Urbanity needed a digital transformation to stay ahead in the industry. We revamped their digital strategy and platform, leading to a better user experience and significant business growth.",
-		slug: "digital-transformation-for-urbanity",
+			"Built a modern and responsive e-commerce platform for TechMart, providing a seamless shopping experience and improving customer satisfaction.",
+		slug: "developing-ecommerce-platform-for-techmart",
 	},
 	{
-		imageSrc: "/images/case8.jpeg",
-		imageAlt: "Marketing Strategy for HealthCareX",
-		title: "Marketing Strategy for HealthCareX",
-		type: "product",
-		description:
-			"HealthCareX needed a new marketing strategy to effectively reach their target audience. We developed and executed a plan that improved their online presence and attracted more clients.",
-		slug: "marketing-strategy-for-healthcarex",
-	},
-	{
-		imageSrc: "/images/case9.jpeg",
-		imageAlt: "Website Redesign for FinSolve",
-		title: "Website Redesign for FinSolve",
+		imageSrc: "/images/work4.jpeg",
+		imageAlt: "Graphic Design for Tech Conference by InnovateTech",
+		title: "Graphic Design for Tech Conference by InnovateTech",
 		type: "service",
-		subtype: "web development",
-		subTypeName: "Web Development",
-		subTypeSlug: "web-development",
+		subtype: "graphic design",
+		subTypeName: "Graphic Design",
+		subTypeSlug: "graphic-design",
 		description:
-			"FinSolve’s website required a redesign to better showcase their expertise in financial solutions. Our design enhanced the site's aesthetics and functionality, providing a superior user experience.",
-		slug: "website-redesign-for-finsolve",
+			"Designed engaging visuals and marketing materials for InnovateTech's leading tech conference, enhancing attendee experience and brand visibility.",
+		slug: "graphic-design-for-tech-conference-by-innovate-tech",
 	},
 	{
-		imageSrc: "/images/case10.jpeg",
-		imageAlt: "Creative Design for InnovateX",
-		title: "Creative Design for InnovateX",
-		type: "product",
+		imageSrc: "/images/work5.jpeg",
+		imageAlt: "SEO Optimization for StartupBoost",
+		title: "SEO Optimization for StartupBoost",
+		type: "service",
+		subtype: "seo optimization",
+		subTypeName: "SEO Optimization",
+		subTypeSlug: "seo-optimization",
 		description:
-			"InnovateX needed a striking creative design for their new product launch. We crafted a visually compelling campaign that effectively communicated their product’s unique features and advantages.",
-		slug: "creative-design-for-innovatex",
+			"Implemented effective SEO strategies for StartupBoost, significantly improving their search engine rankings and driving organic traffic.",
+		slug: "seo-optimization-for-startup-boost",
 	},
 	{
-		imageSrc: "/images/case11.jpeg",
-		imageAlt: "Revitalize Brand for EcoWave",
-		title: "Revitalize Brand for EcoWave",
+		imageSrc: "/images/work6.jpeg",
+		imageAlt: "Content Creation for Wanderlust",
+		title: "Content Creation for Wanderlust",
+		type: "service",
+		subtype: "content creation",
+		subTypeName: "Content Creation",
+		subTypeSlug: "content-creation",
+		description:
+			"Created compelling and informative content for Wanderlust, a popular travel blog, engaging a wide audience and boosting their readership.",
+		slug: "content-creation-for-wanderlust",
+	},
+	{
+		imageSrc: "/images/work7.jpeg",
+		imageAlt: "Digital Marketing for Fashion Brand Elegance",
+		title: "Digital Marketing for Fashion Brand Elegance",
+		type: "service",
+		subtype: "digital marketing",
+		subTypeName: "Digital Marketing",
+		subTypeSlug: "digital-marketing",
+		description:
+			"Developed and executed digital marketing campaigns for Elegance, a fashion brand, boosting their online presence and driving sales.",
+		slug: "digital-marketing-for-fashion-brand-elegance",
+	},
+	{
+		imageSrc: "/images/work8.jpeg",
+		imageAlt: "Brand Strategy for Tech Startup InnovateX",
+		title: "Brand Strategy for Tech Startup InnovateX",
+		type: "service",
+		subtype: "brand strategy",
+		subTypeName: "Brand Strategy",
+		subTypeSlug: "brand-strategy",
+		description:
+			"Crafted a comprehensive brand strategy for InnovateX, a tech startup, establishing a strong market presence and aligning their brand with business goals.",
+		slug: "brand-strategy-for-tech-startup-innovate-x",
+	},
+	{
+		imageSrc: "/images/work9.jpeg",
+		imageAlt: "Video Production for FutureTech Corporate Event",
+		title: "Video Production for Corporate Event at FutureTech",
+		type: "service",
+		subtype: "video production",
+		subTypeName: "Video Production",
+		subTypeSlug: "video-production",
+		description:
+			"Produced high-quality videos for FutureTech's corporate event, capturing key moments and highlights to enhance their event coverage.",
+		slug: "video-production-for-corporate-event-future-tech",
+	},
+	{
+		imageSrc: "/images/work10.jpeg",
+		imageAlt: "App Development for Healthcare Provider HealthFirst",
+		title: "App Development for Healthcare Provider HealthFirst",
+		type: "service",
+		subtype: "app development",
+		subTypeName: "App Development",
+		subTypeSlug: "app-development",
+		description:
+			"Developed an innovative healthcare app for HealthFirst, enhancing patient care and engagement with user-friendly features and functionality.",
+		slug: "app-development-for-healthcare-provider-health-first",
+	},
+	{
+		imageSrc: "/images/work11.jpeg",
+		imageAlt: "IT Consulting for Financial Services Firm FinServe",
+		title: "IT Consulting for Financial Services Firm FinServe",
+		type: "service",
+		subtype: "it consulting",
+		subTypeName: "IT Consulting",
+		subTypeSlug: "it-consulting",
+		description:
+			"Provided expert IT consulting services for FinServe, a financial services company, optimizing their tech infrastructure and improving operational efficiency.",
+		slug: "it-consulting-for-financial-services-firm-fin-serve",
+	},
+	{
+		imageSrc: "/images/hompimshop.jpeg",
+		imageAlt: "HompimShop",
+		title: "HompimShop",
 		type: "product",
 		description:
-			"EcoWave aimed to rejuvenate their brand to better reflect their commitment to sustainability. We developed a fresh brand identity and marketing materials, boosting their market presence.",
-		slug: "revitalize-brand-for-ecowave",
+			"A comprehensive e-commerce platform offering a seamless shopping experience with a robust backend and an intuitive frontend.",
+		slug: "hompimshop",
+	},
+	{
+		imageSrc: "/images/hompimpay.jpeg",
+		imageAlt: "HompimPay",
+		title: "HompimPay",
+		type: "product",
+		description:
+			"A secure and efficient payment processing system, enhancing the financial transactions with advanced security measures and user-friendly features.",
+		slug: "hompimpay",
 	},
 ];
 
@@ -258,21 +310,6 @@ export const testimonials = [
 	},
 ];
 
-export const galleryItems = [
-	{
-		imgSrc: "/images/hero1.jpeg",
-		imgAlt: "Gallery Image 1",
-	},
-	{
-		imgSrc: "/images/hero2.jpwg",
-		imgAlt: "Gallery Image 2",
-	},
-	{
-		imgSrc: "/images/gallery3.png",
-		imgAlt: "Gallery Image 3",
-	},
-];
-
 export const socialMediaLinks = [
 	{
 		href: "https://facebook.com",
@@ -280,12 +317,12 @@ export const socialMediaLinks = [
 		Icon: Facebook,
 	},
 	{
-		href: "https://twitter.com",
+		href: "https://x.com/hompim_hq",
 		alt: "Twitter",
 		Icon: Twitter,
 	},
 	{
-		href: "https://instagram.com",
+		href: "https://instagram.com/hompim_hq",
 		alt: "Instagram",
 		Icon: Instagram,
 	},

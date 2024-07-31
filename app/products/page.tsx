@@ -1,5 +1,5 @@
 import ProductSection from "@/components/product-section";
-import { features } from "@/lib/dummy-data";
+import { works } from "@/lib/dummy-data";
 
 import { Metadata } from "next";
 
@@ -9,5 +9,5 @@ export const metadata: Metadata = {
 };
 
 export default function Product() {
-	return <ProductSection products={features}></ProductSection>;
+	return <ProductSection products={works}></ProductSection>;
 }

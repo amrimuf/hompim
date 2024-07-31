@@ -1,6 +1,6 @@
 "use client";
 
-import { filters } from "@/lib/dummy-data";
+import { serviceFilters } from "@/lib/dummy-data";
 import { useRouter } from "next/navigation";
 import React from "react";
 
@@ -18,7 +18,7 @@ const FilterButtons: React.FC<FilterButtonsProps> = ({ currentFilter }) => {
 
 	return (
 		<div className="flex justify-center gap-4 mb-8 flex-wrap">
-			{filters.map((filter) => (
+			{serviceFilters.map((filter) => (
 				<button
 					key={filter.slug}
 					className={`px-4 py-2 rounded-md ${
