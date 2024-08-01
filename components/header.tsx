@@ -81,14 +81,18 @@ const Header = ({ links }: HeaderProps) => {
 									</span>
 								)}
 								{link.content && openIndex === index && (
-									<div className="absolute left-0 top-full rounded-md bg-white border border-gray-200 shadow-lg text-primary/60 hover:text-primary min-w-max ">
-										<ul>
+									<div className="absolute left-0 top-full rounded-md bg-white border border-gray-200 shadow-lg text-primary/60 hover:text-primary min-w-max">
+										<ul
+											className={`grid grid-cols-${Math.ceil(
+												link.content.length / 4
+											)} gap-2 p-2`}
+										>
 											{link.content.map((item, idx) => (
 												<Link
 													href={item.href}
 													key={idx}
 												>
-													<li className="p-2 text-primary/70 hover:text-primary rounded-md hover:bg-primary/10 border-primary/10  max-h-96 border-b-4 hover:border-b-2">
+													<li className="p-2 text-primary/70 hover:text-primary rounded-md hover:bg-primary/10 border-primary/10 border-2 border-b-4 hover:border-b-2">
 														{item.name}
 													</li>
 												</Link>
