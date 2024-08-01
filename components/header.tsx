@@ -113,62 +113,76 @@ const Header = ({ links }: HeaderProps) => {
 
 			{/* MOBILE MENU */}
 			{isMobileMenuOpen && (
-				<div className="fixed inset-0 bg-primary z-50 flex flex-col items-center justify-center text-xl font-bold">
+				<div className="fixed inset-0 bg-primary z-50 flex flex-col items-center justify-center font-bold">
 					<button
 						onClick={toggleMobileMenu}
 						className="absolute top-4 right-4"
 					>
 						<X />
 					</button>
-					<ul className="space-y-4 ">
-						{links.map((link, index) => (
-							<li key={index} className="w-full">
-								<div
-									className="flex justify-between items-center cursor-pointer"
-									onClick={() => toggleExpandMenu(index)}
-								>
-									{link.href ? (
-										<Link
-											href={link.href}
-											onClick={toggleMobileMenu}
+					<div className="w-full h-full overflow-y-auto ">
+						<div className="flex flex-col items-center justify-center min-h-full p-8">
+							<ul className="space-y-4 ">
+								{links.map((link, index) => (
+									<li key={index} className="w-full">
+										<div
+											className="flex justify-between items-center cursor-pointer text-6xl"
+											onClick={() =>
+												toggleExpandMenu(index)
+											}
 										>
-											{link.label}
-										</Link>
-									) : (
-										<>
-											<span>{link.label}</span>
-											<ChevronDown
-												strokeWidth={3}
-												className={`ml-1 transition duration-200 ${
-													expandedMenuIndex === index
-														? "rotate-180"
-														: "rotate-0"
-												}`}
-											/>
-										</>
-									)}
-								</div>
-								{link.content &&
-									expandedMenuIndex === index && (
-										<ul className="mt-2 space-y-2">
-											{link.content.map((item, idx) => (
-												<li key={idx} className="pl-4">
-													<Link
-														href={item.href}
-														onClick={
-															toggleMobileMenu
-														}
-													>
-														{item.name}
-													</Link>
-												</li>
-											))}
-										</ul>
-									)}
-							</li>
-						))}
-						<Cta onClick={toggleMobileMenu} />
-					</ul>
+											{link.href ? (
+												<Link
+													href={link.href}
+													onClick={toggleMobileMenu}
+												>
+													{link.label}
+												</Link>
+											) : (
+												<>
+													<span>{link.label}</span>
+													<ChevronDown
+														strokeWidth={3}
+														className={`ml-1 transition duration-200 ${
+															expandedMenuIndex ===
+															index
+																? "rotate-180"
+																: "rotate-0"
+														}`}
+													/>
+												</>
+											)}
+										</div>
+										{link.content &&
+											expandedMenuIndex === index && (
+												<ul className="mt-2 space-y-2 text-4xl">
+													{link.content.map(
+														(item, idx) => (
+															<li
+																key={idx}
+																className="pl-4"
+															>
+																<Link
+																	href={
+																		item.href
+																	}
+																	onClick={
+																		toggleMobileMenu
+																	}
+																>
+																	{item.name}
+																</Link>
+															</li>
+														)
+													)}
+												</ul>
+											)}
+									</li>
+								))}
+								<Cta onClick={toggleMobileMenu} />
+							</ul>
+						</div>
+					</div>
 				</div>
 			)}
 		</header>
