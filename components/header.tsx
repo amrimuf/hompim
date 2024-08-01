@@ -38,6 +38,10 @@ const Header = ({ links }: HeaderProps) => {
 		setExpandedMenuIndex(expandedMenuIndex === index ? null : index);
 	};
 
+	const calculateGridCols = (length: number): string => {
+		return `grid-cols-${Math.ceil(length / 4)}`;
+	};
+
 	return (
 		<header className="bg-primary text-white fixed top-0 w-full shadow-md z-50">
 			<nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
@@ -83,8 +87,8 @@ const Header = ({ links }: HeaderProps) => {
 								{link.content && openIndex === index && (
 									<div className="absolute left-0 top-full rounded-md bg-white border border-gray-200 shadow-lg text-primary/60 hover:text-primary min-w-max">
 										<ul
-											className={`grid grid-cols-${Math.ceil(
-												link.content.length / 4
+											className={`grid ${calculateGridCols(
+												link.content.length
 											)} gap-2 p-2`}
 										>
 											{link.content.map((item, idx) => (
