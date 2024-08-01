@@ -93,14 +93,6 @@ export default function RootLayout({
 				href="/favicon/favicon-16x16.png"
 			/>
 
-			{/* Manifest and Meta Tags */}
-			<link rel="manifest" href="/manifest.json" />
-			<meta name="msapplication-TileColor" content="#ffffff" />
-			<meta
-				name="msapplication-TileImage"
-				content="/favicon/ms-icon-144x144.png"
-			/>
-			<meta name="theme-color" content="#ffffff" />
 			<body className={inter.className}>
 				<Header links={headerLinks}></Header>
 				<main className="pt-20">{children}</main>

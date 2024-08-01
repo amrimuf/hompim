@@ -39,11 +39,9 @@ const ContactUs = () => {
 				formData,
 				process.env.NEXT_PUBLIC_EMAILJS_USER_ID!
 			);
-			console.log("Email sent successfully:", result);
 			setIsSubmitted(true);
 			setFormData({ name: "", email: "", message: "" }); // Clear form
 		} catch (error) {
-			console.error("Error sending email:", error);
 			setError("An error occurred. Please try again later.");
 		}
 	};
