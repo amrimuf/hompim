@@ -88,7 +88,7 @@ const Header = ({ links }: HeaderProps) => {
 													href={item.href}
 													key={idx}
 												>
-													<li className="p-2 text-primary/70 hover:text-primary rounded-md hover:bg-gray-100 max-h-96 border-b-4 hover:border-b-2">
+													<li className="p-2 text-primary/70 hover:text-primary rounded-md hover:bg-primary/10 border-primary/10  max-h-96 border-b-4 hover:border-b-2">
 														{item.name}
 													</li>
 												</Link>

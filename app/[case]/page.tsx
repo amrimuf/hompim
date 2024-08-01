@@ -41,37 +41,22 @@ export default async function Post({ params }: { params: Params }) {
 	const date = new Date(postData.date).toLocaleDateString();
 
 	const components = {
-		// h1: (props: any) => <h1 className="text-4xl font-bold" {...props} />,
-		// h2: (props: any) => (
-		// 	<h2 className="text-3xl font-bold text-gray-800" {...props} />
-		// ),
-		// h3: (props: any) => (
-		// 	<h3 className="text-xl font-bold text-gray-800" {...props} />
-		// ),
-		// p: (props: any) => <p className="my-4" {...props} />,
 		img: ({ src, alt, width, height }: any) => (
 			<span className="flex justify-center">
 				<Image
 					src={src}
 					alt={alt}
-					width={width || 500} // Provide default values if necessary
+					width={width || 400}
 					height={height || 300}
-					className="max-w-full h-auto border border-gray-300 rounded-lg"
+					className="max-w-full h-auto border border-gray-300 rounded-lg !m-0"
 				/>
 			</span>
 		),
-		// ul: (props: any) => (
-		// 	<ul className="list-disc pl-5 mb-4 text-gray-700" {...props} />
-		// ),
-		// li: (props: any) => <li className="mb-2 text-gray-800" {...props} />,
-		// ol: (props: any) => (
-		// 	<ol className="list-decimal pl-5 mb-4 text-gray-700" {...props} />
-		// ),
 	};
 
 	return (
 		<main className="container mx-auto px-4 py-6 md:px-6 md:py-8">
-			<article className="bg-white border-4 md:border-8 border-secondary border-dashed shadow-md rounded-xl p-6 md:p-8">
+			<article className="bg-white border-4 md:border-8 border-primary/10 border-dashed shadow-md rounded-xl p-6 md:p-8">
 				<header className="flex flex-col items-center mb-6">
 					<h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2 text-center">
 						{postData.title}

@@ -75,7 +75,7 @@ const Works: React.FC = () => {
 				<div className="flex justify-center mt-8">
 					<a
 						href={`/${filterType}s`}
-						className="bg-primary text-white px-6 py-3 rounded-md shadow-md text-center"
+						className="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-md shadow-md text-center"
 					>
 						See More
 					</a>

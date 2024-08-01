@@ -8,10 +8,12 @@ import Marquee from "react-fast-marquee";
 import Section from "./section-layout";
 import ClientCard from "./client-card";
 
-const Gallery: React.FC = () => {
+const Testimonial: React.FC = () => {
 	return (
-		<Section id="gallery" fullWidth={true}>
-			<h2 className="text-3xl font-bold text-center mb-6">Testimonies</h2>
+		<Section id="testimonial" fullWidth={true}>
+			<h2 className="text-3xl font-bold text-center mb-6">
+				Testimonials
+			</h2>
 			<div className="overflow-hidden relative ">
 				<Marquee
 					pauseOnHover={true}
@@ -42,4 +44,4 @@ const Gallery: React.FC = () => {
 	);
 };
 
-export default Gallery;
+export default Testimonial;
