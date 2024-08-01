@@ -39,6 +39,10 @@ const Header = ({ links }: HeaderProps) => {
 	};
 
 	const calculateGridCols = (length: number): string => {
+		if (length < 4) return "grid-cols-1";
+		if (length < 8) return "grid-cols-2";
+		if (length < 12) return "grid-cols-3";
+		if (length < 16) return "grid-cols-4";
 		return `grid-cols-${Math.ceil(length / 4)}`;
 	};
 
