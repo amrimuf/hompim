@@ -13,7 +13,7 @@ import ScrollDownAnimation from "./scroll-down";
 
 const Hero: React.FC = () => {
 	return (
-		<div className="relative flex flex-col items-center justify-around gap-8 m-4 md:m-8 ">
+		<section className="relative flex flex-col items-center justify-around gap-8 m-4 md:m-8 ">
 			<div className="w-full mx-auto">
 				<Swiper
 					spaceBetween={0}
@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
 				<div className="swiper-button-next"></div>
 			</div>
 			<ScrollDownAnimation />
-		</div>
+		</section>
 	);
 };
 
