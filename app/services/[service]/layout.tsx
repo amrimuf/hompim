@@ -1,7 +1,6 @@
 import { Metadata } from "next";
-import Page from "./page"; // import your Demo's page
+import Page from "./page";
 import { works } from "@/lib/dummy-data";
-import { generateTitle } from "@/lib/metadata";
 
 interface Params {
 	service: string;
@@ -19,7 +18,7 @@ export async function generateMetadata({
 	const titleSegment = filteredService
 		? filteredService.subTypeName
 		: "Service";
-	const title = generateTitle(titleSegment);
+	const title = titleSegment;
 
 	return {
 		title,

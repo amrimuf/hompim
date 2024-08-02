@@ -5,13 +5,16 @@ import BackToTopButton from "@/components/back-to-top";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { headerLinks } from "@/lib/dummy-data";
-import { generateTitle } from "@/lib/metadata";
+import { APP_NAME } from "@/lib/metadata";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: generateTitle(),
-	description: "Glow your wow.",
+	title: {
+		template: `%s | ${APP_NAME}`,
+		default: `${APP_NAME} - Digital Creative & Marketing Agency | SaaS House`,
+	},
+	description: `${APP_NAME} is a leading digital creative and marketing agency specializing in innovative solutions for brands and SaaS products. We offer cutting-edge strategies in digital marketing, creative design, and software developments to elevate your business presence and drive growth.`,
 };
 
 export default function RootLayout({

@@ -7,6 +7,7 @@ interface PostMetadata {
 	title: string;
 	author: string;
 	date: string;
+	description?: string
 }
 
 // Define the type for the post data

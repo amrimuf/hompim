@@ -2,11 +2,9 @@ import React from "react";
 import { works } from "@/lib/dummy-data";
 import ServiceSection from "@/components/service-section";
 import type { Metadata } from "next";
-import { generateTitle } from "@/lib/metadata";
 
 export const metadata: Metadata = {
-	title: generateTitle("Service"),
-	description: "Hompim's services.",
+	title: "Service",
 };
 
 const ServicesPage: React.FC = () => {

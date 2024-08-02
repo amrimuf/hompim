@@ -3,9 +3,7 @@ import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Image from "next/image";
 import type { Metadata } from "next";
-import { generateTitle } from "@/lib/metadata";
 
-// Define the params type
 interface Params {
 	case: string;
 }
@@ -25,7 +23,8 @@ export async function generateMetadata({
 }): Promise<Metadata> {
 	const postData = await getPostDetails(params.case);
 	return {
-		title: generateTitle(postData.title),
+		title: postData.title,
+		description: postData.description
 	};
 }
 

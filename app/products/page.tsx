@@ -5,7 +5,6 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
 	title: "Product",
-	description: "Your Description",
 };
 
 export default function Product() {
