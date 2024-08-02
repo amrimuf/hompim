@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { ChevronDown, Menu, X } from "lucide-react";
 
-import { LinkItem } from "@/lib/types";
 import { headerLinks } from "@/lib/dummy-data";
 import { useState } from "react";
 import Cta from "./cta";
