@@ -167,12 +167,12 @@ const Header = ({ links }: HeaderProps) => {
 										</div>
 										{link.content &&
 											expandedMenuIndex === index && (
-												<ul className="mt-2 space-y-2 text-4xl">
+												<ul className="mt-2 space-y-2 text-4xl ">
 													{link.content.map(
 														(item, idx) => (
 															<li
 																key={idx}
-																className="pl-4"
+																className="pl-4 border-b pb-2 border-white/30"
 															>
 																<Link
 																	href={
