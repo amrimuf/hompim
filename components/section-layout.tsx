@@ -7,7 +7,6 @@ interface SectionProps {
 	id?: string;
 	className?: string;
 	title?: string;
-	gradient?: string;
 	children: React.ReactNode;
 	fullWidth?: boolean;
 }
@@ -17,18 +16,14 @@ const Section: React.FC<SectionProps> = ({
 	title,
 	children,
 	className,
-	gradient,
 	fullWidth,
 }) => {
 	return (
-		<section
-			id={id}
-			className={cn("", gradient ? gradient : "bg-white", className)}
-		>
+		<section id={id} className={className}>
 			{title && (
 				<h2
 					className={cn(
-						"text-4xl md:text-5xl font-bold mb-8 px-4 text-center text-gray-800 ",
+						"text-4xl md:text-5xl font-bold mb-8 px-4 text-center text-secondary-foreground",
 						mouse.className
 					)}
 				>

@@ -61,7 +61,7 @@ export default async function Post({ params }: { params: Params }) {
 			<article className="bg-white border-4 md:border-8 border-primary/10 border-dashed shadow-md rounded-xl p-6 md:p-8">
 				<header className="flex flex-col items-center mb-6">
 					<h1
-						className={`"not-prose text-4xl md:text-5xl text-gray-900 mb-2 text-center"
+						className={`"not-prose text-4xl md:text-5xl text-secondary-foreground mb-2 text-center"
 							${mouse.className}
 						`}
 					>

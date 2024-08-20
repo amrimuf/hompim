@@ -15,18 +15,12 @@ const NotFoundPage = () => {
 				Sorry, the page you are looking for does not exist.
 			</p>
 			<div className="mt-4">
-				<Link
-					href="/"
-					className="px-4 py-2 text-white bg-primary rounded hover:bg-primary-700"
-				>
+				<Link href="/" className="btn-secondary">
 					Go to Home
 				</Link>
 			</div>
 			<div className="mt-4">
-				<button
-					onClick={() => router.back()}
-					className="px-4 py-2 text-white bg-gray-500 rounded hover:bg-gray-700"
-				>
+				<button onClick={() => router.back()} className="btn-primary">
 					Go Back
 				</button>
 			</div>

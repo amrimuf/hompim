@@ -26,7 +26,7 @@ const ServiceSection: React.FC<servicesectionProps> = ({
 		<main className="container mx-auto p-4">
 			<h2
 				className={cn(
-					"text-3xl md:text-6xl font-bold mb-6 text-center",
+					"text-5xl md:text-6xl font-bold mb-6 text-center",
 					mouse.className
 				)}
 			>

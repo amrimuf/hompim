@@ -117,16 +117,13 @@ const ContactUs = () => {
 								></textarea>
 							</div>
 							<div className="flex items-center justify-between">
-								<button
-									type="submit"
-									className="bg-primary text-white px-4 py-2 rounded-md shadow-sm hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
-								>
+								<button type="submit" className="btn-secondary">
 									Send
 								</button>
 								<button
 									type="button"
 									onClick={handleReset}
-									className="bg-secondary px-4 py-2 rounded-md shadow-sm hover:bg-secondary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary"
+									className="btn-primary"
 								>
 									Reset
 								</button>
