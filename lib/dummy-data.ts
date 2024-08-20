@@ -4,17 +4,12 @@ export const headerLinks = [
 	{
 		label: "Services",
 		content: [
-			{ name: "Photography", href: "/services/photography" },
 			{ name: "Web Development", href: "/services/web-development" },
 			{ name: "UI/UX Design", href: "/services/ui-ux-design" },
 			{ name: "Graphic Design", href: "/services/graphic-design" },
-			{ name: "Content Creation", href: "/services/content-creation" },
-			{ name: "SEO Optimization", href: "/services/seo-optimization" },
-			{ name: "Digital Marketing", href: "/services/digital-marketing" },
-			{ name: "Brand Strategy", href: "/services/brand-strategy" },
+			{ name: "Photography", href: "/services/photography" },
 			{ name: "Video Production", href: "/services/video-production" },
-			{ name: "App Development", href: "/services/app-development" },
-			{ name: "IT Consulting", href: "/services/it-consulting" },
+			{ name: "Content Creation", href: "/services/content-creation" },
 		],
 	},
 	{
@@ -32,17 +27,12 @@ export const headerLinks = [
 
 export const serviceFilters = [
 	{ name: "All", slug: null },
-	{ name: "Photography", slug: "photography" },
 	{ name: "Web Development", slug: "web-development" },
 	{ name: "UI/UX Design", slug: "ui-ux-design" },
 	{ name: "Graphic Design", slug: "graphic-design" },
-	{ name: "Content Creation", slug: "content-creation" },
-	{ name: "SEO Optimization", slug: "seo-optimization" },
-	{ name: "Digital Marketing", slug: "digital-marketing" },
-	{ name: "Brand Strategy", slug: "brand-strategy" },
+	{ name: "Photography", slug: "photography" },
 	{ name: "Video Production", slug: "video-production" },
-	{ name: "App Development", slug: "app-development" },
-	{ name: "IT Consulting", slug: "it-consulting" },
+	{ name: "Content Creation", slug: "content-creation" },
 ];
 
 export const heroSlides = [
@@ -79,7 +69,7 @@ export const workFilters = [
 
 export const works = [
 	{
-		imageSrc: "/images/work1.jpeg",
+		imageSrc: "/images/work1.jpg",
 		imageAlt: "Rebranding Elevanto This Summer",
 		title: "Rebranding Elevanto This Summer",
 		type: "service",
@@ -91,7 +81,7 @@ export const works = [
 		slug: "rebranding-elevanto-this-summer",
 	},
 	{
-		imageSrc: "/images/work2.jpeg",
+		imageSrc: "/images/work2.jpg",
 		imageAlt: "Photography for Nature Magazine",
 		title: "Photography for Nature Magazine",
 		type: "service",
@@ -103,7 +93,7 @@ export const works = [
 		slug: "photography-for-nature-magazine",
 	},
 	{
-		imageSrc: "/images/work3.jpeg",
+		imageSrc: "/images/work3.jpg",
 		imageAlt: "Developing E-commerce Platform for TechMart",
 		title: "Developing E-commerce Platform for TechMart",
 		type: "service",
@@ -115,7 +105,7 @@ export const works = [
 		slug: "developing-ecommerce-platform-for-techmart",
 	},
 	{
-		imageSrc: "/images/work4.jpeg",
+		imageSrc: "/images/work4.jpg",
 		imageAlt: "Graphic Design for Tech Conference by InnovateTech",
 		title: "Graphic Design for Tech Conference by InnovateTech",
 		type: "service",
@@ -127,19 +117,7 @@ export const works = [
 		slug: "graphic-design-for-tech-conference-by-innovate-tech",
 	},
 	{
-		imageSrc: "/images/work5.jpeg",
-		imageAlt: "SEO Optimization for StartupBoost",
-		title: "SEO Optimization for StartupBoost",
-		type: "service",
-		subtype: "seo optimization",
-		subTypeName: "SEO Optimization",
-		subTypeSlug: "seo-optimization",
-		description:
-			"Implemented effective SEO strategies for StartupBoost, significantly improving their search engine rankings and driving organic traffic.",
-		slug: "seo-optimization-for-startup-boost",
-	},
-	{
-		imageSrc: "/images/work6.jpeg",
+		imageSrc: "/images/work6.jpg",
 		imageAlt: "Content Creation for Wanderlust",
 		title: "Content Creation for Wanderlust",
 		type: "service",
@@ -151,31 +129,7 @@ export const works = [
 		slug: "content-creation-for-wanderlust",
 	},
 	{
-		imageSrc: "/images/work7.jpeg",
-		imageAlt: "Digital Marketing for Fashion Brand Elegance",
-		title: "Digital Marketing for Fashion Brand Elegance",
-		type: "service",
-		subtype: "digital marketing",
-		subTypeName: "Digital Marketing",
-		subTypeSlug: "digital-marketing",
-		description:
-			"Developed and executed digital marketing campaigns for Elegance, a fashion brand, boosting their online presence and driving sales.",
-		slug: "digital-marketing-for-fashion-brand-elegance",
-	},
-	{
-		imageSrc: "/images/work8.jpeg",
-		imageAlt: "Brand Strategy for Tech Startup InnovateX",
-		title: "Brand Strategy for Tech Startup InnovateX",
-		type: "service",
-		subtype: "brand strategy",
-		subTypeName: "Brand Strategy",
-		subTypeSlug: "brand-strategy",
-		description:
-			"Crafted a comprehensive brand strategy for InnovateX, a tech startup, establishing a strong market presence and aligning their brand with business goals.",
-		slug: "brand-strategy-for-tech-startup-innovate-x",
-	},
-	{
-		imageSrc: "/images/work9.jpeg",
+		imageSrc: "/images/work9.jpg",
 		imageAlt: "Video Production for FutureTech Corporate Event",
 		title: "Video Production for Corporate Event at FutureTech",
 		type: "service",
@@ -185,30 +139,6 @@ export const works = [
 		description:
 			"Produced high-quality videos for FutureTech's corporate event, capturing key moments and highlights to enhance their event coverage.",
 		slug: "video-production-for-corporate-event-future-tech",
-	},
-	{
-		imageSrc: "/images/work10.jpeg",
-		imageAlt: "App Development for Healthcare Provider HealthFirst",
-		title: "App Development for Healthcare Provider HealthFirst",
-		type: "service",
-		subtype: "app development",
-		subTypeName: "App Development",
-		subTypeSlug: "app-development",
-		description:
-			"Developed an innovative healthcare app for HealthFirst, enhancing patient care and engagement with user-friendly features and functionality.",
-		slug: "app-development-for-healthcare-provider-health-first",
-	},
-	{
-		imageSrc: "/images/work11.jpeg",
-		imageAlt: "IT Consulting for Financial Services Firm FinServe",
-		title: "IT Consulting for Financial Services Firm FinServe",
-		type: "service",
-		subtype: "it consulting",
-		subTypeName: "IT Consulting",
-		subTypeSlug: "it-consulting",
-		description:
-			"Provided expert IT consulting services for FinServe, a financial services company, optimizing their tech infrastructure and improving operational efficiency.",
-		slug: "it-consulting-for-financial-services-firm-fin-serve",
 	},
 	{
 		imageSrc: "/images/hompimshop.jpeg",

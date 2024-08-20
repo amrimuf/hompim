@@ -1,6 +1,9 @@
 import React from "react";
 import Card from "./card";
 import FilterButtons from "./filter-buttons";
+import { cn } from "@/lib/utils";
+import { Mouse_Memoirs } from "next/font/google";
+const mouse = Mouse_Memoirs({ subsets: ["latin"], weight: ["400"] });
 
 interface servicesectionProps {
 	services: any[];
@@ -21,7 +24,14 @@ const ServiceSection: React.FC<servicesectionProps> = ({
 
 	return (
 		<main className="container mx-auto p-4">
-			<h2 className="text-3xl font-bold mb-6 text-center">Service</h2>
+			<h2
+				className={cn(
+					"text-3xl md:text-6xl font-bold mb-6 text-center",
+					mouse.className
+				)}
+			>
+				Service
+			</h2>
 			<FilterButtons currentFilter={subtypeSlug} />
 			<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 				{filteredservices.length > 0 ? (

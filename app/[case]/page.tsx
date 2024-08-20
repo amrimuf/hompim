@@ -3,6 +3,9 @@ import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Image from "next/image";
 import type { Metadata } from "next";
+import { cn } from "@/lib/utils";
+import { Mouse_Memoirs } from "next/font/google";
+const mouse = Mouse_Memoirs({ subsets: ["latin"], weight: ["400"] });
 
 interface Params {
 	case: string;
@@ -57,7 +60,11 @@ export default async function Post({ params }: { params: Params }) {
 		<main className="container mx-auto px-4 py-6 md:px-6 md:py-8">
 			<article className="bg-white border-4 md:border-8 border-primary/10 border-dashed shadow-md rounded-xl p-6 md:p-8">
 				<header className="flex flex-col items-center mb-6">
-					<h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2 text-center">
+					<h1
+						className={`"not-prose text-4xl md:text-5xl text-gray-900 mb-2 text-center"
+							${mouse.className}
+						`}
+					>
 						{postData.title}
 					</h1>
 					<p className="text-sm text-gray-500 mb-2 text-center">
