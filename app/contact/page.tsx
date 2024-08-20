@@ -48,7 +48,7 @@ const ContactUs = () => {
 
 	return (
 		<main className="container mx-auto">
-			<div className="bg-white shadow-md rounded-lg p-6">
+			<div className="bg-white border-4 md:border-8 border-primary/10 border-dashed shadow-md rounded-xl p-6 md:p-8">
 				<h1 className="text-3xl font-bold mb-4 text-primary">
 					Contact Us
 				</h1>

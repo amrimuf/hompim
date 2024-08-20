@@ -1,5 +1,7 @@
 import { cn } from "@/lib/utils";
+import { Mouse_Memoirs } from "next/font/google";
 import React from "react";
+const mouse = Mouse_Memoirs({ subsets: ["latin"], weight: ["400"] });
 
 interface SectionProps {
 	id?: string;
@@ -21,10 +23,17 @@ const Section: React.FC<SectionProps> = ({
 	return (
 		<section
 			id={id}
-			className={cn("py-16", gradient ? gradient : "bg-white", className)}
+			className={cn("", gradient ? gradient : "bg-white", className)}
 		>
 			{title && (
-				<h2 className="text-3xl font-bold mb-8 text-center">{title}</h2>
+				<h2
+					className={cn(
+						"text-4xl md:text-5xl font-bold mb-8 px-4 text-center text-gray-800 ",
+						mouse.className
+					)}
+				>
+					{title}
+				</h2>
 			)}
 			<div
 				className={cn(" mx-auto", {

@@ -17,7 +17,7 @@ const ClientCard: React.FC<CardProps> = ({
 	company,
 }) => {
 	return (
-		<div className="bg-white w-60 sm:w-96 p-6 rounded-xl shadow-lg border border-2 border-primary">
+		<div className="bg-white w-60 sm:w-96 p-6 rounded-xl shadow-lg">
 			<p className="text-lg italic text-gray-700">{quote}</p>
 			<div className="flex items-center mt-6">
 				<Image

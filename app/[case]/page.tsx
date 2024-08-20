@@ -24,7 +24,7 @@ export async function generateMetadata({
 	const postData = await getPostDetails(params.case);
 	return {
 		title: postData.title,
-		description: postData.description
+		description: postData.description,
 	};
 }
 

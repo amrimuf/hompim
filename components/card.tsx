@@ -37,19 +37,19 @@ const Card: React.FC<CardProps> = ({
 				href={`/${slug}`}
 				target="_blank"
 				rel="noopener noreferrer"
-				className="absolute top-4 right-4 bg-white text-primary p-2 rounded-full shadow-lg flex items-center justify-center z-10 hover:scale-110 transition-all duration-500"
+				className="absolute top-4 right-4 bg-primary text-white p-2 rounded-full shadow-lg flex items-center justify-center z-10 hover:scale-110 transition-all duration-500"
 			>
 				<ExternalLink className="h-6 w-6" />
 			</Link>
 
 			{/* Title */}
-			<h3 className="absolute bottom-4 left-4 md:text-xl font-bold text-primary bg-white bg-opacity-80 p-2 mr-4 rounded-lg shadow-md z-10">
+			<h3 className="absolute bottom-4 left-4 md:text-lg font-semibold text-gray-800 bg-white/90 p-2 mr-4 rounded-lg shadow-md z-10">
 				{title}
 			</h3>
 
 			{/* Overlay */}
 			<div className="absolute inset-0 bg-white bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 z-0">
-				<div className="text-center text-primary">
+				<div className="text-center text-gray-600">
 					<p className="text-lg">{description}</p>
 				</div>
 			</div>

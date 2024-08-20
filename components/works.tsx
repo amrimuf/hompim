@@ -37,25 +37,30 @@ const Works: React.FC = () => {
 	return (
 		<Section
 			id="works"
-			title="Our Works"
-			gradient="bg-gradient-to-r from-primary via-secondary to-primary"
+			title="Innovations We've Brought to Life"
+			className="bg-secondary"
 		>
 			{/* Filter Buttons */}
 			{filteredWorkFilters.length >= 2 && (
-				<div className="flex justify-center gap-4 mb-8">
-					{filteredWorkFilters.map((option) => (
-						<button
-							key={option.slug}
-							className={`px-4 py-2 rounded-md bg-white ${
-								filterType === option.slug
-									? "outline outline-primary"
-									: "shadow-md"
-							}`}
-							onClick={() => setFilterType(option.slug)}
-						>
-							{option.label}
-						</button>
-					))}
+				<div className="flex justify-center mb-8">
+					<div className="inline-flex p-1 rounded-full bg-white shadow-inner">
+						{filteredWorkFilters.map((option) => (
+							<button
+								key={option.slug}
+								className={`
+            px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ease-in-out
+            ${
+				filterType === option.slug
+					? "bg-primary text-white shadow-md"
+					: "text-gray-600 hover:text-gray-800"
+			}
+          `}
+								onClick={() => setFilterType(option.slug)}
+							>
+								{option.label}
+							</button>
+						))}
+					</div>
 				</div>
 			)}
 			<div className="grid grid-cols-1 md:grid-cols-3 gap-8">

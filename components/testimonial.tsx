@@ -10,14 +10,15 @@ import ClientCard from "./client-card";
 
 const Testimonial: React.FC = () => {
 	return (
-		<Section id="testimonial" fullWidth={true}>
-			<h2 className="text-3xl font-bold text-center mb-6">
-				Testimonials
-			</h2>
+		<Section
+			id="testimonial"
+			title="What Our Clients Are Saying"
+			fullWidth={true}
+		>
 			<div className="overflow-hidden relative ">
 				<Marquee
 					pauseOnHover={true}
-					speed={100}
+					speed={90}
 					gradient={false}
 					loop={0}
 					direction="left"
