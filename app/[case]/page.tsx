@@ -65,7 +65,9 @@ export default async function Post({ params }: { params: Params }) {
 							${mouse.className}
 						`}
 					>
-						{postData.title}
+						<span className="block text-center w-full">
+							{postData.title}
+						</span>
 					</h1>
 					<p className="text-sm text-gray-500 mb-2 text-center">
 						{date}
