@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
 								<div className="absolute inset-0 flex flex-col items-center justify-center p-6 bg-secondary/20 rounded-lg ">
 									<h2
 										className={cn(
-											"text-4xl md:text-8xl text-white font-bold mb-4 text-center",
+											"text-6xl md:text-8xl text-white font-bold mb-4 text-center",
 											mouse.className
 										)}
 									>

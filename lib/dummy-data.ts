@@ -141,7 +141,7 @@ export const works = [
 		slug: "video-production-for-corporate-event-future-tech",
 	},
 	{
-		imageSrc: "/images/hompimshop.jpeg",
+		imageSrc: "/images/hompimshop.jpg",
 		imageAlt: "HompimShop",
 		title: "HompimShop",
 		type: "product",
@@ -150,7 +150,7 @@ export const works = [
 		slug: "hompimshop",
 	},
 	{
-		imageSrc: "/images/hompimpay.jpeg",
+		imageSrc: "/images/hompimpay.jpg",
 		imageAlt: "HompimPay",
 		title: "HompimPay",
 		type: "product",
